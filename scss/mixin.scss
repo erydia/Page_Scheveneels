@@ -1,0 +1,85 @@
+@import "veriables";
+
+@mixin designated-margin-page {
+    margin-left: $default-margin;
+    margin-right: $default-margin;
+}
+
+@mixin reducing-the-margin {
+    margin-left: $default-margin / 2;
+    margin-right: $default-margin / 2;
+}
+
+@mixin center-the {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+@mixin set-in-a-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+@mixin set-in-a-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+
+@mixin navbar-link-styles {
+    font-family: $default-link-font;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+@mixin is-button-styles {
+    background-color: $default-button-background;
+    padding: 20px 24px;
+    transition: 0.1s linear background-color;
+
+    &:hover {
+        background-color: transparentize($default-button-background, 0.2)
+    }
+}
+
+@mixin is-heading-styles {
+    color: $default-header-color;
+    font-family: $default-header-font;
+    font-weight: 400;    
+}
+
+@mixin is-paragraph-styles {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: $primary-paragraph-font;
+    color: $primary-paragraph-color;
+}
+
+@mixin is-paragraph-italic-styles {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: $secondary-paragraph-font;
+    color: $italic-paragraph-color;
+}
+
+@mixin is-vector-styles {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: $default-vector-background;
+}
+
+@mixin is-shadow-elipse-styles {
+    background-color: transparentize($default-shadow-background, 0.85 );
+    display: inline-block;        
+}

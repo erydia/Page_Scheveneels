@@ -1,0 +1,18 @@
+{
+  "name": "scheveneels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.2",
+    "typescript": "^3.1.3"
+  }
+}
